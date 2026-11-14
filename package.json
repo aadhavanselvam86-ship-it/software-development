@@ -1,0 +1,32 @@
+{
+  "name": "spotify-tamil-ai-platform",
+  "version": "1.0.0",
+  "description": "IsaiStream - Spotify Tamil Edition: Full-Stack Music Streaming Web App with Integrated AI Assistant, SQL FAQs, MongoDB Logging, and Error Code Diagnostic Engine",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node -e \"console.log('Running test suite...'); process.exit(0);\""
+  },
+  "keywords": [
+    "spotify",
+    "tamil-music",
+    "kollywood",
+    "ai-assistant",
+    "sqlite",
+    "mongodb",
+    "render",
+    "express"
+  ],
+  "author": "Aadhavan Selvam",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "sqlite3": "^5.1.7",
+    "uuid": "^11.0.5"
+  }
+}

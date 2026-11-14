@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: spotify-tamil-ai-platform
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: SQLITE_DB_PATH
+        value: ./data/isai_stream.db
+      - key: THIRD_PARTY_API_TIMEOUT_MS
+        value: 2500
+      - key: MONGODB_URI
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
